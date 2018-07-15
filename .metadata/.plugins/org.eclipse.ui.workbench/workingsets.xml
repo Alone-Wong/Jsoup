@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516063199307_3" label="Crawler" name="Crawler">
+<item elementID="=stat-grid" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=com.meritit.ggfwpt.spider" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ExportExcel2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1507956145291_0" label="Window Working Set" name="Aggregate for window 1507956145291"/>
+</workingSetManager>

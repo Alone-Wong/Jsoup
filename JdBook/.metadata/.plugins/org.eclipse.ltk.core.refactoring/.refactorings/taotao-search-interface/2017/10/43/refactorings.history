@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;cn.taotao.search.service.SearchItemServic&apos; to &apos;SearchItemService&apos;&#x0D;&#x0A;- Original project: &apos;taotao-search-interface&apos;&#x0D;&#x0A;- Original element: &apos;cn.taotao.search.service.SearchItemServic&apos;&#x0D;&#x0A;- Renamed element: &apos;cn.taotao.search.service.SearchItemService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SearchItemServic&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;cn.taotao.search.service{SearchItemServic.java[SearchItemServic" matchStrategy="1" name="SearchItemService" qualified="false" references="true" similarDeclarations="false" stamp="1508675772123" textual="false" version="1.0"/>
+</session>

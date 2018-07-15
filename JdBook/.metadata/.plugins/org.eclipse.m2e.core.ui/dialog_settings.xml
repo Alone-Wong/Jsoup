@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="issueManagementUrl">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="590" key="height"/>
+		<item value="480" key="width"/>
+		<item value="34" key="y"/>
+		<item value="460" key="x"/>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\workspace\Jsoup\JdBook"/>
+			<item value="E:\workspace\TaoTao\taotao-sso"/>
+			<item value="E:\workspace\TaoTao\taotao-search-web"/>
+			<item value="E:\workspace\TaoTao\taotao-manager\taotao-manager-service"/>
+			<item value="E:\workspace\TaoTao\taotao-portal-web"/>
+			<item value="E:\workspace\TaoTao\pagehelper-"/>
+			<item value="E:\workspace\TaoTao\taotao-manager-service"/>
+			<item value="E:\workspace\TaoTao\taotao-parent"/>
+			<item value="E:\workspace\TaoTao\taotao-manager"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="groupId">
+		</list>
+		<list key="package">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\workspace\TaoTao"/>
+			<item value="E:\workspace\TaoTao\taotao-content"/>
+			<item value="E:\workspace\TaoTao\taotao-manager"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="taotao-sso-service"/>
+			<item value="taotao-sso-interface"/>
+			<item value="taotao-search-dao"/>
+			<item value="taotao-search-service"/>
+			<item value="taotao-search-interface"/>
+			<item value="taotao-content-service"/>
+			<item value="taotao-service"/>
+			<item value="taotao-content-interface"/>
+			<item value="taotao-manager-dao"/>
+			<item value="taotao-manager-pojo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.merit"/>
+			<item value="com.jsoup"/>
+			<item value="cn.taotao"/>
+			<item value="cn.heima"/>
+			<item value="org.springframework.boot"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="AutoLogin"/>
+			<item value="login"/>
+			<item value="taotao-sso-web"/>
+			<item value="taotao-parent"/>
+			<item value="taotao-sso-service"/>
+			<item value="taotao-sso"/>
+			<item value="taotao-sso-interface"/>
+			<item value="springboot-demo"/>
+			<item value="spring-boot-starter-parent"/>
+			<item value="spring-boot-parent"/>
+			<item value="taotao-search-web"/>
+			<item value="taotao-search-dao"/>
+			<item value="taotao-search"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+			<item value="1.4.4.RELEASE"/>
+		</list>
+	</section>
+</section>

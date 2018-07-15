@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="libs/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="libs/activemq-client-5.14.1.jar"/>
+	<classpathentry kind="lib" path="libs/geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/geronimo-jta_1.0.1B_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hawtbuf-1.11.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.1.41.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="libs/commons-pool2-2.4.2.jar"/>
+	<classpathentry kind="lib" path="libs/jedis-2.8.2-.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.2.6.jar"/>
+	<classpathentry kind="lib" path="libs/guava-17.0.jar"/>
+	<classpathentry kind="lib" path="libs/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="libs/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="libs/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="libs/servlet-api.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-log4j12-1.7.7.jar"/>
+	<classpathentry kind="lib" path="libs/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/c3p0-0.9.2.1.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

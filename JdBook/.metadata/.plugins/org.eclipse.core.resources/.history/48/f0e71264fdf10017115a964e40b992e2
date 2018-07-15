@@ -1,0 +1,159 @@
+package com.meritit.customize.people;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import com.meritit.customize.jdbc.InsertDBUtils;
+import com.meritit.customize.jdbc.JdbcConnection;
+import com.meritit.customize.util.CrawlerUtils;
+
+public class CatchTemperatureCrawler {
+	/**
+	 * jsoup入口
+	 */
+	@SuppressWarnings("rawtypes")
+	public static void crawlerHandler() {
+
+		String temUrl = "https://en.tutiempo.net/climate/china/";
+
+		List<Map> list = new ArrayList<Map>();
+
+		for (int i = 1; i < 11; i++) {
+			String url = temUrl + i;
+
+			Document document = CrawlerUtils.crawler(url, "GET");
+
+			Elements elements = document.select(".mlistados.mt10");
+
+			for (Element element : elements) {
+				Elements elements2 = element.select("ul li");
+				for (Element element2 : elements2) {
+					Map<String, String> map = new HashMap<String, String>();
+					String tagName = element2.text();
+					String href = element2.getElementsByTag("a").attr("href");
+					map.put("tagName", tagName);
+					map.put("href", "https://en.tutiempo.net" + href);
+					System.err.println(map);
+					list.add(map);
+				}
+			}
+		}
+		// 插入数据到数据库
+		// try {
+		// InsertDBUtils.insertAll("temp", list);
+		// } catch (SQLException e) {
+		// e.printStackTrace();
+		// }
+
+	}
+
+	/**
+	 * 获取省市的拼音名称
+	 */
+	public static void crawlerHandler02() {
+
+		String chinaUrl = "http://flash.weather.com.cn/wmaps/xml/china.xml";
+
+		String url = "http://flash.weather.com.cn/wmaps/xml/";
+
+		// 用于存储省份的名称和拼音的List
+		ArrayList<Map> provinceList = new ArrayList<Map>();
+		// 用于存储省份拼音的List
+		List<String> provincePYList = new ArrayList<String>();
+
+		Document document = CrawlerUtils.crawler(chinaUrl, "GET");
+
+		Elements chinaTags = document.getElementsByTag("china");
+
+		Map<String, String> map2 = new HashMap<String, String>();
+		for (Element element : chinaTags) {
+			Elements cityTags = element.getElementsByTag("city");
+			for (Element element2 : cityTags) {
+				Map<String, String> map = new HashMap<String, String>();
+				String provinceHZ = element2.attr("quname");
+				String provincePY = element2.attr("pyname");
+				// map.put("provinceHZ", provinceHZ);
+				// map.put("provincePY", provincePY);
+
+				map2.put(provincePY, provinceHZ);
+
+				// provinceList.add(map);
+				provincePYList.add(provincePY);
+			}
+		}
+
+		List<Map> list = new ArrayList<Map>();
+
+		for (int i = 0; i < provincePYList.size(); i++) {
+			String provincePY = provincePYList.get(i);
+			String provinceHZ = map2.get(provincePY);
+
+			String pinyin = url + provincePYList.get(i) + ".xml";
+			Document doc = CrawlerUtils.crawler(pinyin, "GET");
+			Elements cityTags = doc.getElementsByTag("city");
+			for (Element cityTag : cityTags) {
+				Map<String, String> map = new HashMap<String, String>();
+				String cityName = cityTag.attr("cityName");
+				String cityPinYin = cityTag.attr("pyName");
+				map.put("provinceHZ", provinceHZ);
+				map.put("provincePinYin", provincePY);
+				map.put("cityHZ", cityName);
+				map.put("cityPinYin", cityPinYin);
+				list.add(map);
+			}
+		}
+
+		// 插入数据到数据库
+		// try {
+		// InsertDBUtils.insertAll("city", list);
+		// } catch (SQLException e) {
+		// e.printStackTrace();
+		// }
+
+		List<Map> result = new ArrayList<Map>();
+
+		try {
+			Connection connection = JdbcConnection.getConnection();
+			result = JdbcConnection.getResult(connection);
+			// 插入数据库
+			 InsertDBUtils.insertAll("url", result);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		for (Map map : result) {
+			String tagName = (String) map.get("tagName");
+			String href = (String) map.get("href");
+//			String href = (String) map.get("");
+		//	System.out.println(tagName+"----"+href);
+			Iterator iterator = map.entrySet().iterator();
+			while (iterator.hasNext()) {
+				Map.Entry<String, String> entry = (Entry<String, String>) iterator.next();
+				String key = entry.getKey();
+				String value = entry.getValue();
+			}
+		}
+
+	}
+
+	/**
+	 * Main方法 调用Crawler
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// CatchTemperatureCrawler.crawlerHandler();
+		CatchTemperatureCrawler.crawlerHandler02();
+	}
+
+}

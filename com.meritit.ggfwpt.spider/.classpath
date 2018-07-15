@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="libs/activemq-client-5.14.1.jar"/>
+	<classpathentry kind="lib" path="libs/geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/geronimo-jta_1.0.1B_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hawtbuf-1.11.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.1.41.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="libs/commons-pool2-2.4.2.jar"/>
+	<classpathentry kind="lib" path="libs/jedis-2.8.2-.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.18.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

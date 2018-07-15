@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.merit.login.model&apos; to &apos;com.merit.login.utils&apos;&#x0D;&#x0A;- Original project: &apos;login&apos;&#x0D;&#x0A;- Original element: &apos;login/src/main/java/com.merit.login.model&apos;&#x0D;&#x0A;- Renamed element: &apos;login/src/main/java/com.merit.login.utils&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.merit.login.model&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.merit.login.model" name="com.merit.login.utils" qualified="false" references="true" stamp="1511532345078" textual="false" version="1.0"/>
+</session>

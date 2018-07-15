@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.meritit.customize.people.DqsczzCrawler&apos; to &apos;DqsczzCrawler2&apos;&#x0D;&#x0A;- Original project: &apos;stat-grid&apos;&#x0D;&#x0A;- Original element: &apos;com.meritit.customize.people.DqsczzCrawler&apos;&#x0D;&#x0A;- Renamed element: &apos;com.meritit.customize.people.DqsczzCrawler2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DqsczzCrawler&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.meritit.customize.people{DqsczzCrawler.java[DqsczzCrawler" matchStrategy="1" name="DqsczzCrawler2" qualified="false" references="true" similarDeclarations="false" stamp="1516067458952" textual="false" version="1.0"/>
+</session>

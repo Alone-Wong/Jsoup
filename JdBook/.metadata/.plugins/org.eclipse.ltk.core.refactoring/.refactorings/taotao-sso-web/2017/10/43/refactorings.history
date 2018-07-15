@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;cn.taotao.sso.controller.CheckData.java&apos; to &apos;UserController.java&apos;&#x0D;&#x0A;- Original project: &apos;taotao-sso-web&apos;&#x0D;&#x0A;- Original element: &apos;cn.taotao.sso.controller.CheckData.java&apos;&#x0D;&#x0A;- Renamed element: &apos;cn.taotao.sso.controller.UserController.java&apos;" description="Rename compilation unit &apos;CheckData.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;cn.taotao.sso.controller{CheckData.java" name="UserController.java" references="false" stamp="1509187313711" version="1.0"/>
+</session>

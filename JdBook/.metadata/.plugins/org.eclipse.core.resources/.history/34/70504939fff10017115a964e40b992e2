@@ -1,0 +1,34 @@
+package com.meritit.customize.people;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class DateCount {
+
+	public static void main(String[] args) throws ParseException {
+		int months = countMonths("01-2011","01-2012","MM-yyyy");
+		System.err.println(months);
+	}
+
+	public static int countMonths(String date1, String date2, String pattern) throws ParseException {
+		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+
+		Calendar c1 = Calendar.getInstance();
+		Calendar c2 = Calendar.getInstance();
+
+		c1.setTime(sdf.parse(date1));
+		c2.setTime(sdf.parse(date2));
+
+		int year = c2.get(Calendar.YEAR) - c1.get(Calendar.YEAR);
+
+		// 开始日期若小月结束日期
+		if (year < 0) {
+			year = -year;
+			return year * 12 + c1.get(Calendar.MONTH) - c2.get(Calendar.MONTH);
+		}
+
+		return year * 12 + c2.get(Calendar.MONTH) - c1.get(Calendar.MONTH);
+	}
+
+}
